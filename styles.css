@@ -1,0 +1,175 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte e cores principais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c4e16; /* Verde Palmeiras */
+    color: #fff;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #006747; /* Verde mais escuro */
+}
+
+header .logo img {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Efeito de hover nos links do menu */
+nav ul li a:hover {
+    color: #FFC72C; /* Amarelo Palmeiras */
+}
+
+/* Estilos das seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+/* Imagem destaque */
+.imagem-destaque {
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Estilos para o formulário de contato */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #006747;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #FFC72C;
+}
+
+/* Definindo a imagem de fundo para o body */
+body {
+    /* A imagem de fundo */
+    background-image: url('trofeus.png');
+    
+    /* Fazendo com que a imagem ocupe toda a tela */
+    background-size: cover;
+    
+    /* Centralizando a imagem */
+    background-position: center;
+    
+    /* Impedindo que a imagem se repita */
+    background-repeat: no-repeat;
+    
+    /* Altura e largura do body (se necessário) */
+    height: 100vh; /* altura 100% da tela */
+    margin: 0; /* removendo margens */
+    color: white; /* cor do texto para contrastar com o fundo */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o texto */
+h1 {
+    text-align: center;
+    margin-top: 20%;
+    font-size: 3em;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Estilo do h1 */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white; /* Cor do texto */
+    text-align: center;
+    text-shadow: 
+        2px 2px 0 #000,   /* Sombra superior e direita */
+        -2px -2px 0 #000, /* Sombra inferior e esquerda */
+        2px -2px 0 #000,  /* Sombra inferior e direita */
+        -2px 2px 0 #000;  /* Sombra superior e esquerda */
+}
+
+/* Estilo do p */
+p {
+    font-size: 24px;
+    color: white; /* Cor do texto */
+    text-align: center;
+    text-shadow: 
+        1px 1px 0 #000,   /* Sombra superior e direita */
+        -1px -1px 0 #000, /* Sombra inferior e esquerda */
+        1px -1px 0 #000,  /* Sombra inferior e direita */
+        -1px 1px 0 #000;  /* Sombra superior e esquerda */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #006747;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .imagem-destaque {
+        width: 100%;
+    }
+}
